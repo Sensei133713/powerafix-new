@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoweraFix | Ammattitaitoista autonhoidon huippua</title>
+  <meta name="description" content="PoweraFix tarjoaa ammattitaitoista autonhoitoa: käsinpesu, sisäpuhdistus, keraamiset pinnoitteet ja kiillotus. Autosi ansaitsee parasta!">
+  <meta name="keywords" content="autonpesu, autonhoito, detailing, käsinpesu, keraaminen pinnoite, kiillotus, sisäpuhdistus">
+  <meta name="author" content="PoweraFix">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://sensei133713.github.io/powerafix-html/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sensei133713.github.io/powerafix-html/">
+  <meta property="og:title" content="PoweraFix | Ammattitaitoista autonhoidon huippua">
+  <meta property="og:description" content="Käsin pesty. Huolella tehty. Ei kovia harjoja. Vain kiiltävä lopputulos.">
+  <meta property="og:image" content="https://sensei133713.github.io/powerafix-html/assets/images/powerafix-logo.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sensei133713.github.io/powerafix-html/">
+  <meta property="twitter:title" content="PoweraFix | Ammattitaitoista autonhoidon huippua">
+  <meta property="twitter:description" content="Käsin pesty. Huolella tehty. Ei kovia harjoja. Vain kiiltävä lopputulos.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/powerafix-logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "PoweraFix",
+    "description": "Ammattitaitoista autonhoitoa ja detailing-palvelut",
+    "url": "https://sensei133713.github.io/powerafix-html/",
+    "telephone": ["+46-72-025-68-28", "+358-46-554-90-98"],
+    "email": "info@powerafix.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SE"
+    },
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-16:00"],
+    "priceRange": "€€",
+    "image": "https://sensei133713.github.io/powerafix-html/assets/images/powerafix-logo.png"
+  }
+  </script>
+</head>
+<body>
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="assets/images/powerafix-logo.png" alt="PoweraFix" width="120" height="48">
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Etusivu</a>
+        
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <a href="#palvelut" class="nav-link">
+            Palvelut
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-left: 4px;">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="palvelut/sisapuhdistus.html" class="dropdown-item">Sisäpuhdistus</a>
+            <a href="palvelut/ulkopuhdistus.html" class="dropdown-item">Ulkopuhdistus</a>
+            <a href="palvelut/keraamiset-pinnoitteet.html" class="dropdown-item">Keraamiset pinnoitteet</a>
+            <a href="palvelut/erikoispalvelut.html" class="dropdown-item">Erikoispalvelut</a>
+          </div>
+        </div>
+        
+        <a href="galleria.html" class="nav-link">Galleria</a>
+        <a href="hinnoittelu.html" class="nav-link">Hinnoittelu</a>
+        <a href="meista.html" class="nav-link">Meistä</a>
+        <a href="yhteystiedot.html" class="nav-link">Yhteystiedot</a>
+      </div>
+      
+      <!-- CTA Button -->
+      <a href="https://wa.me/46720256828" class="btn btn-primary hidden lg:flex" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Varaa aika
+      </a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Avaa valikko">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuClose" aria-label="Sulje valikko">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <a href="index.html" class="mobile-nav-link">Etusivu</a>
+    <a href="palvelut/sisapuhdistus.html" class="mobile-nav-link">Sisäpuhdistus</a>
+    <a href="palvelut/ulkopuhdistus.html" class="mobile-nav-link">Ulkopuhdistus</a>
+    <a href="palvelut/keraamiset-pinnoitteet.html" class="mobile-nav-link">Keraamiset pinnoitteet</a>
+    <a href="palvelut/erikoispalvelut.html" class="mobile-nav-link">Erikoispalvelut</a>
+    <a href="galleria.html" class="mobile-nav-link">Galleria</a>
+    <a href="hinnoittelu.html" class="mobile-nav-link">Hinnoittelu</a>
+    <a href="meista.html" class="mobile-nav-link">Meistä</a>
+    <a href="yhteystiedot.html" class="mobile-nav-link">Yhteystiedot</a>
+    <a href="https://wa.me/46720256828" class="btn btn-primary" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Varaa aika
+    </a>
+  </div>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+      <!-- Background -->
+      <div class="hero-bg">
+        <img src="assets/images/axhzu.jpg" alt="" aria-hidden="true">
+      </div>
+      <div class="hero-overlay"></div>
+      
+      <!-- Glow Effects -->
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          PoweraFix - Auton yksityiskohtainen hoito
+        </div>
+        
+        <h1 class="hero-title">
+          Ammattitaitoista<br>
+          <span class="gradient-text">autonhoidon</span> huippua
+        </h1>
+        
+        <p class="hero-subtitle">
+          Käsin pesty. Huolella tehty. Ei kovia harjoja. Ei hutilointia. 
+          Vain kiiltävä lopputulos, joka ylittää odotukset.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="https://wa.me/46720256828" class="btn btn-primary btn-lg" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Varaa aika nyt
+          </a>
+          <a href="palvelut/sisapuhdistus.html" class="btn btn-outline btn-lg">
+            Tutustu palveluihin
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="section" id="palvelut">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Palvelut</span>
+          <h2 class="section-title">Mitä me teemme</h2>
+          <p class="section-subtitle">
+            Tarjoamme kattavan valikoiman autonhoitopalveluja, jotka pitävät autosi 
+            loistavassa kunnossa vuodesta toiseen.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Service 1: Sisäpuhdistus -->
+          <a href="palvelut/sisapuhdistus.html" class="service-card group">
+            <div class="service-card-image">
+              <img src="assets/images/sisa.jpg" alt="Sisäpuhdistus" loading="lazy">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <div class="service-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Sisäpuhdistus</h3>
+                <p class="service-card-description">Perusteellinen puhdistus penkeille, matoille ja kojelaudalle.</p>
+                <span class="service-card-link">
+                  Lue lisää
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Service 2: Ulkopuhdistus -->
+          <a href="palvelut/ulkopuhdistus.html" class="service-card group">
+            <div class="service-card-image">
+              <img src="assets/images/ulko.jpg" alt="Ulkopuhdistus" loading="lazy">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <div class="service-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                    <circle cx="7" cy="17" r="2"/>
+                    <circle cx="17" cy="17" r="2"/>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Ulkopuhdistus</h3>
+                <p class="service-card-description">Käsinpesu ilman kovia harjoja - turvallinen maalipinnalle.</p>
+                <span class="service-card-link">
+                  Lue lisää
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Service 3: Keraamiset pinnoitteet -->
+          <a href="palvelut/keraamiset-pinnoitteet.html" class="service-card group">
+            <div class="service-card-image">
+              <img src="assets/images/pinnoitus.jpg" alt="Keraamiset pinnoitteet" loading="lazy">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <div class="service-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Keraamiset pinnoitteet</h3>
+                <p class="service-card-description">Pitkäkestoinen suoja ja kiilto jopa 2-5 vuodeksi.</p>
+                <span class="service-card-link">
+                  Lue lisää
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Service 4: Erikoispalvelut -->
+          <a href="palvelut/erikoispalvelut.html" class="service-card group">
+            <div class="service-card-image">
+              <img src="assets/images/erikois.jpg" alt="Erikoispalvelut" loading="lazy">
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <div class="service-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+                <h3 class="service-card-title">Erikoispalvelut</h3>
+                <p class="service-card-description">Kiillotus, vahaus ja muut erikoistyöt tarpeidesi mukaan.</p>
+                <span class="service-card-link">
+                  Lue lisää
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US SECTION
+         ============================================ -->
+    <section class="section bg-darker">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Miksi me</span>
+          <h2 class="section-title">Miksi valita PoweraFix?</h2>
+          <p class="section-subtitle">
+            Me emme tingi laadusta. Jokainen auto saa saman huolellisen kohtelun 
+            kuin se olisi meidän oma.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Ammattitaito</h3>
+            <p class="feature-description">
+              Yli 5 vuoden kokemus autonhoidosta. Jatkuva kouluttautuminen ja uusimpien tekniikoiden hallinta.
+            </p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 3h12l4 6-10 13L2 9Z"/>
+                <path d="M11 3 8 9l4 13 4-13-3-6"/>
+                <path d="M2 9h20"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Premium-tuotteet</h3>
+            <p class="feature-description">
+              Käytämme vain alan parhaita tuotteita: Gtechniq, CarPro, Chemical Guys ja muita huippumerkkejä.
+            </p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Tyytyväisyystakuu</h3>
+            <p class="feature-description">
+              Et ole tyytyväinen? Emme ole valmiita. Takaamme laadun jokaisessa työssä - kysy lisää!
+            </p>
+          </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <div class="text-center p-6 bg-card rounded-xl border border-gray-800">
+            <div class="text-4xl font-extrabold gradient-text mb-2">500+</div>
+            <div class="text-gray-400">Tyytyväistä asiakasta</div>
+          </div>
+          <div class="text-center p-6 bg-card rounded-xl border border-gray-800">
+            <div class="text-4xl font-extrabold gradient-text mb-2">5+</div>
+            <div class="text-gray-400">Vuoden kokemus</div>
+          </div>
+          <div class="text-center p-6 bg-card rounded-xl border border-gray-800">
+            <div class="text-4xl font-extrabold gradient-text mb-2">100%</div>
+            <div class="text-gray-400">Käsityö</div>
+          </div>
+          <div class="text-center p-6 bg-card rounded-xl border border-gray-800">
+            <div class="text-4xl font-extrabold gradient-text mb-2">24h</div>
+            <div class="text-gray-400">Nopea palvelu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         ============================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Asiakkaat</span>
+          <h2 class="section-title">Mitä asiakkaamme sanovat</h2>
+          <p class="section-subtitle">
+            Lue, mitä asiakkaamme ovat kokeneet PoweraFixin palveluiden kanssa.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Uskomatonta työtä! Autoni näyttää paremmalta kuin koskaan. Sisäpuhdistus oli perusteellinen ja lopputulos ylitti odotukset."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Mikko K.</div>
+                <div class="testimonial-role">Audi A4 omistaja</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Erinomainen palvelu alusta loppuun. Keraaminen pinnoite on kestänyt loistavasti ja auto kiiltää yhä kuin uusi. Suosittelen!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <div class="testimonial-name">Anna L.</div>
+                <div class="testimonial-role">BMW X5 omistaja</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-text">
+              "Ammattimaista työtä ja ystävällinen palvelu. Kiillotus tehtiin huolellisesti ja tulos on uskomaton. Kiitos PoweraFix!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <div class="testimonial-name">Jukka R.</div>
+                <div class="testimonial-role">Mercedes-Benz omistaja</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+    <section class="section bg-darker">
+      <div class="container">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+            Valmis antamaan autollesi <span class="gradient-text">ansaitsemansa hoidon?</span>
+          </h2>
+          <p class="text-gray-400 text-lg mb-8">
+            Varaa aika nyt ja koe eron ammattitaitoinen autonhoito tekee. 
+            Ensimmäinen arviointi on ilmainen!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/46720256828" class="btn btn-primary btn-lg" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Varaa aika WhatsAppissa
+            </a>
+            <a href="yhteystiedot.html" class="btn btn-outline btn-lg">
+              Ota yhteyttä
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <img src="assets/images/powerafix-logo.png" alt="PoweraFix" class="footer-logo">
+          <p class="footer-description">
+            Ammattitaitoista autonhoitoa ja detailing-palveluja. 
+            Autosi ansaitsee parasta.
+          </p>
+          <div class="flex gap-3">
+            <a href="https://instagram.com/powerafix1" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-white hover:bg-magenta transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/powerafix" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-white hover:bg-magenta transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Pikalinkit</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Etusivu</a></li>
+            <li><a href="palvelut/sisapuhdistus.html" class="footer-link">Palvelut</a></li>
+            <li><a href="galleria.html" class="footer-link">Galleria</a></li>
+            <li><a href="hinnoittelu.html" class="footer-link">Hinnoittelu</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="footer-title">Palvelut</h4>
+          <ul class="footer-links">
+            <li><a href="palvelut/sisapuhdistus.html" class="footer-link">Sisäpuhdistus</a></li>
+            <li><a href="palvelut/ulkopuhdistus.html" class="footer-link">Ulkopuhdistus</a></li>
+            <li><a href="palvelut/keraamiset-pinnoitteet.html" class="footer-link">Keraamiset pinnoitteet</a></li>
+            <li><a href="palvelut/erikoispalvelut.html" class="footer-link">Erikoispalvelut</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-title">Yhteystiedot</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+46720256828" class="footer-link">+46 72 025 68 28</a></li>
+            <li><a href="tel:+358465549098" class="footer-link">+358 46 554 90 98</a></li>
+            <li><a href="mailto:info@powerafix.com" class="footer-link">info@powerafix.com</a></li>
+            <li><a href="yhteystiedot.html" class="footer-link">Katso aukioloajat</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025 PoweraFix. Kaikki oikeudet pidätetään.
+        </p>
+        <div class="flex gap-6">
+          <a href="#" class="footer-link text-sm">Tietosuojaseloste</a>
+          <a href="#" class="footer-link text-sm">Käyttöehdot</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/46720256828" class="floating-btn" target="_blank" aria-label="Varaa aika WhatsAppissa">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

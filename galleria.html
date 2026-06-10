@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PoweraFix galleria. Katso kuvia toteuttamistamme autonhoitotöistä. Ennen ja jälkeen kuvia, sisä- ja ulkopuhdistuksia, pinnoitteita.">
+    <meta name="keywords" content="autonhoito galleria, ennen jälkeen, auton puhdistus kuvat, Tampere autonhoito">
+    <title>Galleria | PoweraFix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/powerafix-logo.png" alt="PoweraFix" class="logo-img">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Avaa valikko">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Etusivu</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Palvelut</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="palvelut/sisapuhdistus.html">Sisäpuhdistus</a></li>
+                        <li><a href="palvelut/ulkopuhdistus.html">Ulkopuhdistus</a></li>
+                        <li><a href="palvelut/keraamiset-pinnoitteet.html">Keraamiset pinnoitteet</a></li>
+                        <li><a href="palvelut/erikoispalvelut.html">Erikoispalvelut</a></li>
+                    </ul>
+                </li>
+                <li><a href="hinnoittelu.html" class="nav-link">Hinnoittelu</a></li>
+                <li><a href="galleria.html" class="nav-link active">Galleria</a></li>
+                <li><a href="meista.html" class="nav-link">Meistä</a></li>
+                <li><a href="yhteystiedot.html" class="nav-link">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('assets/images/gallery-hero.webp');">
+        <div class="service-hero-content">
+            <h1 class="service-hero-title">Galleria</h1>
+            <p class="service-hero-subtitle">Kuvia toteuttamistamme töistä</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Kaikki</button>
+                <button class="filter-btn" data-filter="interior">Sisäpuhdistus</button>
+                <button class="filter-btn" data-filter="exterior">Ulkopuhdistus</button>
+                <button class="filter-btn" data-filter="ceramic">Keraamiset pinnoitteet</button>
+                <button class="filter-btn" data-filter="special">Erikoispalvelut</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-masonry" id="galleryMasonry">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="assets/images/gallery/interior-1.webp" alt="Sisäpuhdistus ennen ja jälkeen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Sisäpuhdistus</span>
+                        <h4 class="gallery-title">Audi A4 täysi sisäpuhdistus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="assets/images/gallery/exterior-1.webp" alt="Ulkopuhdistus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Ulkopuhdistus</span>
+                        <h4 class="gallery-title">BMW M3 premium pesu</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="ceramic">
+                    <img src="assets/images/gallery/ceramic-1.webp" alt="Keraaminen pinnoite" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Keraaminen pinnoite</span>
+                        <h4 class="gallery-title">Mercedes C-sarja pinnoitus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="assets/images/gallery/interior-2.webp" alt="Nahkapenkkien puhdistus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Sisäpuhdistus</span>
+                        <h4 class="gallery-title">Nahkapenkkien syväpuhdistus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="special">
+                    <img src="assets/images/gallery/special-1.webp" alt="Maalinkorjaus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Erikoispalvelut</span>
+                        <h4 class="gallery-title">Maalinkorjaus ennen ja jälkeen</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="assets/images/gallery/exterior-2.webp" alt="Savipesu" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Ulkopuhdistus</span>
+                        <h4 class="gallery-title">Savipesu ja vahaus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="ceramic">
+                    <img src="assets/images/gallery/ceramic-2.webp" alt="Keraaminen pinnoite kiilto" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Keraaminen pinnoite</span>
+                        <h4 class="gallery-title">Tesla Model 3 pinnoitus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="assets/images/gallery/interior-3.webp" alt="Mattojen puhdistus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Sisäpuhdistus</span>
+                        <h4 class="gallery-title">Mattojen syväpuhdistus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-category="special">
+                    <img src="assets/images/gallery/special-2.webp" alt="Keulansuojakalvo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Erikoispalvelut</span>
+                        <h4 class="gallery-title">PPF keulansuojakalvo</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="assets/images/gallery/exterior-3.webp" alt="Rengaspesut" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Ulkopuhdistus</span>
+                        <h4 class="gallery-title">Vanteiden ja renkaiden pesu</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-category="ceramic">
+                    <img src="assets/images/gallery/ceramic-3.webp" alt="Vanteiden pinnoitus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Keraaminen pinnoite</span>
+                        <h4 class="gallery-title">Vanteiden keraaminen pinnoite</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="assets/images/gallery/interior-4.webp" alt="Ikkunoiden puhdistus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Sisäpuhdistus</span>
+                        <h4 class="gallery-title">Ikkunoiden ja peilien puhdistus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 13 -->
+                <div class="gallery-item" data-category="special">
+                    <img src="assets/images/gallery/special-3.webp" alt="Valoumpion kunnostus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Erikoispalvelut</span>
+                        <h4 class="gallery-title">Valoumpion kunnostus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 14 -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="assets/images/gallery/exterior-4.webp" alt="Detailing" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Ulkopuhdistus</span>
+                        <h4 class="gallery-title">Täysi ulkodetailing</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 15 -->
+                <div class="gallery-item" data-category="ceramic">
+                    <img src="assets/images/gallery/ceramic-4.webp" alt="Keraaminen pinnoite vesi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Keraaminen pinnoite</span>
+                        <h4 class="gallery-title">Hydrofobinen vaikutus</h4>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 16 -->
+                <div class="gallery-item" data-category="special">
+                    <img src="assets/images/gallery/special-4.webp" alt="Moottoritilan puhdistus" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Erikoispalvelut</span>
+                        <h4 class="gallery-title">Moottoritilan puhdistus</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Sulje">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Edellinen">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Seuraava">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-magenta) 0%, var(--color-cyan) 100%); padding: 80px 0;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-4" style="color: #000;">Haluatko samanlaisen lopputuloksen?</h2>
+                <p class="text-xl mb-8" style="color: #000;">Varaa aika ja anna autosi ammattilaisten käsiin</p>
+                <a href="https://wa.me/358401234567?text=Hei!%20Haluaisin%20varata%20ajan%20auton%20puhdistukseen." class="btn" style="background: #000; color: #fff;" target="_blank">
+                    Varaa aika WhatsAppissa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/powerafix-logo.png" alt="PoweraFix" class="footer-logo">
+                    <p class="footer-desc">Ammattitaitoista autonhoidon huippua. Palvelemme Tampereella ja lähialueilla.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Palvelut</h4>
+                    <ul class="footer-links">
+                        <li><a href="palvelut/sisapuhdistus.html">Sisäpuhdistus</a></li>
+                        <li><a href="palvelut/ulkopuhdistus.html">Ulkopuhdistus</a></li>
+                        <li><a href="palvelut/keraamiset-pinnoitteet.html">Keraamiset pinnoitteet</a></li>
+                        <li><a href="palvelut/erikoispalvelut.html">Erikoispalvelut</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Yritys</h4>
+                    <ul class="footer-links">
+                        <li><a href="meista.html">Meistä</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="hinnoittelu.html">Hinnoittelu</a></li>
+                        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Yhteystiedot</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Tehdaskatu 5, 33400 Tampere</li>
+                        <li>📞 040 123 4567</li>
+                        <li>✉️ info@powerafix.fi</li>
+                        <li>🕐 Ma-Pe: 8:00 - 18:00</li>
+                        <li>🕐 La: 9:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PoweraFix. Kaikki oikeudet pidätetään.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/358401234567?text=Hei!%20Haluaisin%20varata%20ajan%20auton%20puhdistukseen." class="whatsapp-float" target="_blank" aria-label="Varaa aika WhatsAppissa">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 2C8.268 2 2 8.268 2 16c0 2.585.686 5.012 1.882 7.118L2 30l7.118-1.882A13.937 13.937 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.2a11.2 11.2 0 01-5.66-1.53l-.404-.242-4.282 1.13 1.142-4.176-.267-.426A11.228 11.228 0 114.8 16 11.246 11.246 0 0116 27.2zm6.168-8.466c-.338-.17-1.994-.984-2.304-1.096-.31-.112-.536-.17-.762.17-.226.34-.876 1.096-1.074 1.32-.198.226-.396.254-.734.084-.338-.17-1.428-.526-2.72-1.678-1.006-.896-1.686-2.002-1.884-2.342-.198-.34-.02-.524.148-.694.154-.152.34-.396.51-.594.17-.198.226-.34.34-.566.112-.226.056-.424-.028-.594-.084-.17-.762-1.836-1.044-2.516-.274-.662-.552-.572-.762-.582l-.65-.014c-.226 0-.594.084-.904.424-.31.34-1.186 1.16-1.186 2.826 0 1.668 1.216 3.278 1.384 3.504.17.226 2.394 3.654 5.8 5.122.81.35 1.442.56 1.936.716.814.258 1.554.222 2.14.134.652-.098 1.994-.816 2.276-1.514.282-.698.282-1.296.198-1.42z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Varaa aika</span>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
