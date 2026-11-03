@@ -7,7 +7,7 @@ import json
 import posixpath
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://sensei133713.github.io/powerafix-new/'
+BASE = 'https://powerafix.com/'
 WA = 'https://wa.me/358465549098'
 PHONE = '+358 46 554 9098'
 EMAIL = 'info@powerafix.com'
@@ -170,4 +170,9 @@ def build(lang,key):
 if __name__=='__main__':
     for language in TEXT:
         for page in ROUTES: build(language,page)
+    urls = [BASE + page_path(language, page) for language in TEXT for page in ROUTES]
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap += '\n'.join('<url><loc>' + e(url) + '</loc></url>' for url in urls)
+    (ROOT/'sitemap.xml').write_text(sitemap+'\n</urlset>\n', encoding='utf-8')
+    (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'sitemap.xml\n', encoding='utf-8')
     print('Built 18 pages: Swedish default and Finnish, using shared SEK prices.')
