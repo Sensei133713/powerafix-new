@@ -1,0 +1,28 @@
+# Canonical public hostname. Local previews and provider preview URLs are unaffected.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(?:www\.)?powerafix\.com$ [NC]
+RewriteCond %{THE_REQUEST} \s/+((?:fi/)?)index\.html(?:[?\s]) [NC]
+RewriteRule ^(?:fi/)?index\.html$ https://powerafix.com/%1 [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^www\.powerafix\.com$ [NC]
+RewriteRule ^ https://powerafix.com%{REQUEST_URI} [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^powerafix\.com$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://powerafix.com%{REQUEST_URI} [R=301,L,NE]
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/xml text/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType text/css "access plus 1 hour"
+ExpiresByType application/javascript "access plus 1 hour"
+</IfModule>

@@ -76,3 +76,4 @@ html{scroll-padding-top:100px}body{background:#090a0d;color:#f5f5f7;line-height:
  .detail-actions .btn { white-space:normal; }
 }
 @media (max-width:359px) { .site-brand span { font-size:13px; } .site-brand small { font-size:6px; } .detail-hero h1 { font-size:32px; } }
+.seo-breadcrumb{padding-top:18px;padding-bottom:18px;font-size:13px;color:#b9bdc8;overflow-wrap:anywhere}.seo-breadcrumb a{color:#f2f3f7;text-decoration:underline;text-underline-offset:3px}
