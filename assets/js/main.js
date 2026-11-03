@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFAQ();
     initContactForm();
     initSmoothScroll();
-    initScrollAnimations();
+    // Content remains visible without animation or JavaScript.
     initStickyNavbar();
 });
 
@@ -39,35 +39,18 @@ function initNavbar() {
  * Mobile menu toggle
  */
 function initMobileMenu() {
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const navMenu = document.getElementById('navMenu');
-    
-    if (!mobileMenuBtn || !navMenu) return;
-
-    mobileMenuBtn.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
-
-    // Close menu when clicking on a link
-    const navLinks = navMenu.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!navbar.contains(e.target) && navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
-    });
+    const button = document.querySelector('.site-menu-toggle');
+    const menu = document.querySelector('.site-menu');
+    if (!button || !menu) return;
+    const setOpen = open => {
+        button.setAttribute('aria-expanded', String(open));
+        menu.classList.toggle('is-open', open);
+    };
+    button.addEventListener('click', () => setOpen(button.getAttribute('aria-expanded') !== 'true'));
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { setOpen(false); button.focus(); } });
+    document.addEventListener('click', e => { if (!e.target.closest('.site-header')) setOpen(false); });
+    window.addEventListener('resize', () => { if (window.innerWidth >= 1100) setOpen(false); });
 }
 
 /**
@@ -323,12 +306,10 @@ function initContactForm() {
             return;
         }
         
-        // Simulate form submission
-        showNotification('Viesti lähetetty! Otamme yhteyttä pian.', 'success');
-        form.reset();
-        
-        // In production, you would send this data to your server
-        console.log('Form data:', data);
+        const subject = 'Yhteydenotto — ' + (data.carModel || 'Autonhoito');
+        const body = `${data.message}\n\nNimi: ${data.firstName} ${data.lastName}\nSähköposti: ${data.email}\nPuhelin: ${data.phone || ''}\nPalvelu: ${data.service || ''}\nAuto: ${data.carModel || ''}`;
+        window.location.href = 'mailto:info@powerafix.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        showNotification('Sähköpostiohjelma avataan. Lähetä viesti sieltä. Voit myös kirjoittaa osoitteeseen info@powerafix.com.');
     });
 }
 
